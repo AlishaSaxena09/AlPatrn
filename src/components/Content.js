@@ -32,7 +32,10 @@ function Content() {
             <div>
               <p>Learn from best members</p>
             </div>
-            <button>Start Learning</button>
+            <button className="start-btn">
+              Start Learning
+              <span class="material-symbols-outlined">arrow_downward</span>
+            </button>
           </div>
         </div>
         <div class="box box-25 box-purple">

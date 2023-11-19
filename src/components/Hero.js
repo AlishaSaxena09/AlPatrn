@@ -13,7 +13,8 @@ function Hero() {
       <div className="flex hero-next-text">
         <button className="gen-btn">Start Generating</button>
         <p className="next-text">
-          The Next Generation <b>Production</b> For Designers
+          The Next Generation <br />
+          <b>Production</b> For Designers
         </p>
       </div>
     </div>

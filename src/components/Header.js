@@ -27,11 +27,34 @@ const Header = () => {
   return (
     <div className={`header ${menuOpen ? "open" : ""}`}>
       <div className="logo">AlPatrn</div>
-      {/* <div className="menu-icon" onClick={() => setMenuOpen(true)}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div> */}
+      <div className="new-menu-btn" onClick={() => setMenuOpen(true)}>
+        <button className="menu-btn mar-0">
+          <span>Menu</span>
+          <span class="material-symbols-outlined menu-svg">menu</span>
+        </button>
+      </div>
+
+      {menuOpen ? (
+        <div className="openMenu">
+          <ul>
+            {navLinks.map((ele) => {
+              return (
+                <li>
+                  <a href={ele.path}>{ele.text}</a>
+                </li>
+              );
+            })}
+          </ul>
+          <span
+            class="material-symbols-outlined cross"
+            onClick={() => setMenuOpen(false)}
+          >
+            close
+          </span>
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className="menu">
         <div className="column">
