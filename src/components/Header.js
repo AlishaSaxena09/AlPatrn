@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import "../App.css"; // Make sure to create a CSS file for styling
-
-// ... (previous code)
-
+import "../App.css";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   const navLinks = [
     { id: 1, text: "Home", path: "/" },
